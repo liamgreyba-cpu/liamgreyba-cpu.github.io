@@ -131,6 +131,7 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex:none;transform:translateY(-1px)}
 .dot.t{background:var(--teal)}
 .dot.g{background:var(--line)}
+.skillnote{margin:.9rem 0 0;padding-top:.85rem;border-top:1px solid var(--line);font-size:.8rem;line-height:1.5;color:var(--ink-3)}
 .mini{margin-left:auto;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);background:var(--soft);border:1px solid var(--line);padding:.1rem .42rem;border-radius:5px;white-space:nowrap}
 
 /* ============ PROJECTS ============ */
@@ -156,6 +157,10 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .feature .fbody{padding:clamp(1.35rem,3vw,2.25rem)}
 .shot{display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#12161C;margin-bottom:1.75rem}
 .shot img{width:100%;height:auto}
+.figpair{display:grid;gap:1.25rem;margin-bottom:1.75rem}
+@media(min-width:720px){.figpair{grid-template-columns:1fr 1fr}}
+.figpair .shot{margin-bottom:0;display:flex;flex-direction:column}
+.figpair .shot img{flex:1;object-fit:contain;background:#12161C}
 .shot figcaption{font-size:.8rem;color:var(--ink-3);background:var(--soft);padding:.6rem .85rem;border-top:1px solid var(--line)}
 .split{display:grid;gap:1.75rem}
 @media(min-width:780px){.split{grid-template-columns:1fr 1fr;column-gap:2.75rem}}
@@ -324,35 +329,34 @@ footer strong{color:#C3D2E4}
     <div class="skill-grid">
       <div class="skill">
         <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg></div>
-        <h3>Spreadsheets &amp; reporting</h3>
+        <h3>Excel &amp; reporting</h3>
         <ul>
           <li><span class="dot"></span><b>PivotTables</b></li>
           <li><span class="dot"></span><b>XLOOKUP &amp; SUMIFS</b></li>
-          <li><span class="dot"></span><b>Data cleaning &amp; validation</b></li>
-          <li><span class="dot"></span><b>Charting &amp; dashboards</b></li>
-          <li><span class="dot g"></span><b>Power Query</b><span class="mini">Adding</span></li>
+          <li><span class="dot"></span><b>Cleaning &amp; validating data</b></li>
+          <li><span class="dot"></span><b>Charts &amp; summary tables</b></li>
+          <li><span class="dot"></span><b>Written reporting</b></li>
         </ul>
       </div>
       <div class="skill">
         <div class="ico t"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
-        <h3>Programming &amp; querying</h3>
+        <h3>Querying &amp; tools</h3>
         <ul>
-          <li><span class="dot t"></span><b>Python</b> — pandas, NumPy</li>
-          <li><span class="dot t"></span><b>Matplotlib</b></li>
-          <li><span class="dot t"></span><b>Data pipelines</b></li>
-          <li><span class="dot g"></span><b>SQL</b> — joins, CTEs<span class="mini">Adding</span></li>
-          <li><span class="dot g"></span><b>Power BI</b><span class="mini">Adding</span></li>
+          <li><span class="dot g"></span><b>SQL</b> — SELECT, WHERE, GROUP BY<span class="mini">Learning</span></li>
+          <li><span class="dot g"></span><b>Power BI</b><span class="mini">Learning</span></li>
+          <li><span class="dot g"></span><b>Python</b> — reading &amp; adapting scripts<span class="mini">Learning</span></li>
         </ul>
+        <p class="skillnote">I'm early with all three. The Python in my featured project was written with AI assistance — I can follow and modify it, but I'm not yet writing it unaided.</p>
       </div>
       <div class="skill">
         <div class="ico n"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-        <h3>Analytical methods</h3>
+        <h3>Analysis methods</h3>
         <ul>
-          <li><span class="dot"></span><b>Monte Carlo simulation</b></li>
-          <li><span class="dot"></span><b>Sensitivity analysis</b></li>
-          <li><span class="dot"></span><b>Train / test validation</b></li>
-          <li><span class="dot"></span><b>Correlation analysis</b></li>
           <li><span class="dot"></span><b>Descriptive statistics</b></li>
+          <li><span class="dot"></span><b>Trend analysis over time</b></li>
+          <li><span class="dot"></span><b>Segmentation &amp; group comparison</b></li>
+          <li><span class="dot"></span><b>Correlation analysis</b></li>
+          <li><span class="dot"></span><b>Monte Carlo simulation</b></li>
         </ul>
       </div>
     </div>
@@ -372,8 +376,8 @@ footer strong{color:#C3D2E4}
         <div class="pc-body">
           <span class="pill done">Complete</span>
           <h3>Model validation at scale</h3>
-          <p>Stress-testing an 11-year model across 12,400 records and 5,000 simulations.</p>
-          <div class="pc-tags"><span class="tg">Python</span><span class="tg">pandas</span><span class="tg">Monte Carlo</span></div>
+          <p>Four validation tests against an 11-year, 12,400-record dataset — and what they caught.</p>
+          <div class="pc-tags"><span class="tg">Python (AI-assisted)</span><span class="tg">Monte Carlo</span><span class="tg">Validation</span></div>
         </div>
       </a>
       <a class="pcard reveal" href="#feature" aria-disabled="true" style="pointer-events:none;opacity:.94">
@@ -382,7 +386,7 @@ footer strong{color:#C3D2E4}
           <span class="pill wip">In progress</span>
           <h3>Production performance analysis</h3>
           <p>Shift-level downtime, yield and throughput — testing assumed causes against the data.</p>
-          <div class="pc-tags"><span class="tg">Excel</span><span class="tg">Power Query</span><span class="tg">Manufacturing</span></div>
+          <div class="pc-tags"><span class="tg">Excel</span><span class="tg">PivotTables</span><span class="tg">Manufacturing</span></div>
         </div>
       </a>
       <a class="pcard reveal" href="#feature" aria-disabled="true" style="pointer-events:none;opacity:.94">
@@ -400,7 +404,7 @@ footer strong{color:#C3D2E4}
       <div class="fhead">
         <span class="pill">Featured project</span>
         <h3>Model validation at scale: catching four flaws before publishing a result</h3>
-        <p>I built a rule-based model over eleven years of historical data and ran it across 12,400 records. The output was unusually strong — so before reporting anything, I built a validation suite to attack it. It found four issues in my own methodology.</p>
+        <p>A rule-based model produced a trade ledger of around 12,400 records across 11 years. The headline numbers looked excellent — which is why I designed a set of tests to attack them before reporting anything. The tests found four problems, all of them in my own methodology.</p>
       </div>
       <div class="fbody">
         <a class="shot" href="assets/smm-validation.png" target="_blank" rel="noopener">
@@ -408,15 +412,26 @@ footer strong{color:#C3D2E4}
           <figcaption>Validation suite — bias testing, cost stress, parameter stability and correlation. Click to view full size.</figcaption>
         </a>
 
+        <div class="figpair">
+          <a class="shot" href="assets/monte-carlo-distribution.png" target="_blank" rel="noopener">
+            <img src="assets/monte-carlo-distribution.png" alt="Histogram showing the distribution of final outcomes across 5,000 Monte Carlo simulations, with 5th, 50th and 95th percentiles marked" loading="lazy">
+            <figcaption>Monte Carlo — distribution of outcomes across 5,000 resamples</figcaption>
+          </a>
+          <a class="shot" href="assets/tornado-sensitivity.png" target="_blank" rel="noopener">
+            <img src="assets/tornado-sensitivity.png" alt="Tornado chart ranking six input assumptions by how much the result changes when each is varied across a range" loading="lazy">
+            <figcaption>Sensitivity — which assumptions the result actually depends on</figcaption>
+          </a>
+        </div>
+
         <div class="split">
           <div>
-            <h4>What I built</h4>
+            <h4>The analysis</h4>
             <ul class="pts">
-              <li>A processing pipeline over 5-minute historical data producing a per-record ledger of ~12,400 rows.</li>
-              <li>A metrics layer computing risk-adjusted return, drawdown series, profit factor and monthly breakdowns.</li>
-              <li>A Monte Carlo resampler running 5,000 simulations, so the output is a distribution rather than a single path.</li>
-              <li>Sensitivity analysis across every input assumption, summarised in a tornado chart.</li>
-              <li>A correlation matrix to test whether six inputs were genuinely independent. Two weren't.</li>
+              <li>Structured an 11-year trade ledger of ~12,400 records — date, instrument, direction and outcome per row — as the dataset for every test that followed.</li>
+              <li>Built the metrics layer: equity curve, maximum drawdown, risk-adjusted return, profit factor, win rate and monthly breakdowns.</li>
+              <li>Ran a Monte Carlo resample across 5,000 simulations, so the headline figure is a distribution of possible outcomes rather than one path that happened to occur.</li>
+              <li>Tested every input assumption across a range of values to see which ones the result actually depended on, ranked in a tornado chart.</li>
+              <li>Built a correlation matrix of monthly returns to test whether six instruments were six independent bets. Two moved together — so the diversification was thinner than the headline suggested.</li>
             </ul>
           </div>
           <div>
@@ -443,17 +458,11 @@ footer strong{color:#C3D2E4}
 
         <div class="callout">
           <p><strong>Why this is the project I lead with.</strong> A result this clean usually means the test is wrong, not that the signal is real. Finding that out myself — rather than having it found for me — is the part of analysis I'd want a team to rely on me for.</p>
-          <p><strong>How it was built.</strong> The Python was written with Claude, Anthropic's AI assistant. I designed the rules and test criteria, sourced and structured the data, ran and debugged it across many iterations, interpreted the output and identified the four issues above. I'm now working through writing the same pipelines unaided.</p>
+          <p><strong>How it was built.</strong> The Python was written with Claude, Anthropic's AI assistant. What's mine is the analysis: designing the tests and deciding what would count as failure, structuring the data, debugging across many iterations, interpreting the output, and identifying the four issues above. I can read and modify the code, and I'm working towards writing it unaided.</p>
         </div>
 
-        <a class="btn btn-o" href="https://github.com/liamgreyba-cpu/model-validation-suite" target="_blank" rel="noopener" style="margin-top:1.5rem">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-1-2.6c3.1-.3 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.4 3.8c0 5.5 3.3 6.7 6.4 7A3.4 3.4 0 0 0 9 18.1V22"/></svg>
-          View the code on GitHub
-        </a>
-
         <div class="chips">
-          <span class="tg">Python</span><span class="tg">pandas</span><span class="tg">NumPy</span><span class="tg">Matplotlib</span>
-          <span class="tg">Monte Carlo</span><span class="tg">Sensitivity analysis</span><span class="tg">Correlation</span>
+          <span class="tg">Python (AI-assisted)</span><span class="tg">Monte Carlo</span><span class="tg">Sensitivity analysis</span><span class="tg">Correlation</span>
         </div>
       </div>
     </article>
@@ -518,10 +527,34 @@ footer strong{color:#C3D2E4}
         </ul>
       </div>
       <div class="tl-item">
-        <div class="tl-head"><h3>Operational and technical roles</h3><span class="when">Earlier</span></div>
-        <p class="org">Various</p>
+        <div class="tl-head"><h3>Operations Assistant</h3><span class="when">2023 – 2024</span></div>
+        <p class="org">Marks &amp; Spencer · Backstore operations</p>
         <ul class="pts">
-          <li>Structured, process-driven environments with an emphasis on procedure, quality standards and reliability.</li>
+          <li>Monitored fridge and freezer temperatures through compliance software, checking readings against food safety thresholds and escalating breaches.</li>
+          <li>Coordinated stock flow in a fast-moving retail environment with strict deadlines.</li>
+        </ul>
+      </div>
+      <div class="tl-item alt">
+        <div class="tl-head"><h3>Line Operator</h3><span class="when">2021 – 2022</span></div>
+        <p class="org">Kingland Drinks · Manchester</p>
+        <ul class="pts t">
+          <li>Used on-site computer systems to monitor line operability and output, keeping production running and identifying stoppages.</li>
+          <li>First exposure to reading operational performance data as part of the job rather than as a report someone else produced.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-head"><h3>Apprentice Heavy Vehicle Technician</h3><span class="when">2017 – 2021</span></div>
+        <p class="org">Northern Commercials (IVECO) · Irlam</p>
+        <ul class="pts">
+          <li>Diagnosed electrical faults using wiring diagrams and test equipment — isolating a variable, testing it, eliminating it, and working through to the cause.</li>
+          <li>Worked to documented health, safety and quality procedures in a commercial workshop from the age of 17.</li>
+        </ul>
+      </div>
+      <div class="tl-item alt">
+        <div class="tl-head"><h3>Earlier</h3><span class="when">2016 – 2017</span></div>
+        <p class="org">Aztec Windows · UPVC manufacturing</p>
+        <ul class="pts t">
+          <li>First job, in a manufacturing environment.</li>
         </ul>
       </div>
       <div class="tl-item alt">
