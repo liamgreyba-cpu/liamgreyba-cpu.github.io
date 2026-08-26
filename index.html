@@ -24,7 +24,7 @@
 <style>
 :root{
   --navy:#0F2138; --navy-2:#17314F; --navy-3:#1E3E62;
-  --blue:#2E7DF6; --blue-d:#1B5FCC; --teal:#17B8A6;
+  --blue:#2E7DF6; --blue-d:#1B5FCC; --teal:#17B8A6; --accent-wip:#C98A16;
   --bg:#FFFFFF; --soft:#F4F7FB; --line:#E1E8F0;
   --ink:#10233B; --ink-2:#51657D; --ink-3:#5F6E86;
   --f:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
@@ -151,6 +151,13 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .pc-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:auto}
 .tg{font-size:.7rem;font-weight:600;color:var(--ink-3);background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:.15rem .45rem}
 
+.inprog{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;margin-bottom:2rem;border-left:3px solid var(--accent-wip,#D9A441)}
+.inprog-head{background:var(--soft);padding:1.5rem clamp(1.35rem,3vw,2.25rem);border-bottom:1px solid var(--line)}
+.inprog-head h3{font-size:clamp(1.15rem,1rem+.55vw,1.45rem);margin-bottom:.55rem}
+.inprog-head p{margin:0;color:var(--ink-2);font-size:.95rem;max-width:70ch}
+.inprog-head strong{color:var(--ink);font-weight:600}
+.inprog-body{padding:clamp(1.35rem,3vw,2.25rem)}
+.inprog-note{margin:1.6rem 0 0;padding-top:1.1rem;border-top:1px solid var(--line);font-size:.88rem;color:var(--ink-3)}
 .feature{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh-lg);overflow:hidden}
 .feature .fhead{background:var(--navy);color:#fff;padding:1.6rem clamp(1.35rem,3vw,2.25rem)}
 .feature .fhead .pill{background:rgba(23,184,166,.18);color:var(--teal)}
@@ -266,7 +273,7 @@ footer strong{color:#C3D2E4}
         <span class="kicker">Manchester, United Kingdom</span>
         <h1>Liam Grey</h1>
         <p class="subtitle">Data Analyst — Excel · Python · SQL</p>
-        <p class="lede">I turn operational data into answers people can act on — collecting it, cleaning it, analysing it, then testing the conclusion before I present it.</p>
+        <p class="lede">I turn operational data into answers people can act on — collecting it, cleaning it, analysing it, then checking the answer before I hand it over.</p>
         <div class="hero-cta">
           <a class="btn btn-p" href="#projects">View my projects</a>
           <a class="btn btn-g" href="assets/Liam-Grey-CV.pdf">Download CV</a>
@@ -303,7 +310,7 @@ footer strong{color:#C3D2E4}
     <h2>I analyse operational data — and I've worked where it's generated.</h2>
     <div class="about-grid" style="margin-top:1.75rem">
       <div>
-        <p>I work the whole process through: sourcing and cleaning the data, defining the metrics, running the analysis, then stress-testing the conclusion before I present it. That last step matters most to me — a finding nobody has challenged isn't a finding worth acting on.</p>
+        <p>I work the whole thing through: finding and cleaning the data, deciding what to measure, running the analysis, then trying to break my own conclusion before I present it. That last step matters most to me — an answer nobody has challenged isn't one worth acting on.</p>
         <p>What I bring that most entry-level analysts don't is context. I work in high-volume food production, so I've seen how operational numbers are actually produced: where they get recorded, where they get recorded wrong, and what a supervisor means when they say a line ran badly. That means I know which questions are worth asking before I open the spreadsheet.</p>
         <p>Behind that sits formal training and self-directed work — the Google Data Analytics Professional Certificate, Excel to a working standard, and Python for datasets too large for a spreadsheet. The featured project below is a validation suite I built to attack my own results, and it caught four flaws in my methodology before I reported anything.</p>
         <p>I'm looking for a data or business analyst apprenticeship where I can apply that to real commercial problems — ideally in operations, manufacturing or logistics.</p>
@@ -374,6 +381,15 @@ footer strong{color:#C3D2E4}
     <p class="sec-intro">Self-directed analytical work. Each project covers the full process — from raw data through to a conclusion I've tested against its own weaknesses.</p>
 
     <div class="pcards">
+      <a class="pcard reveal" href="#coffee">
+        <img class="thumb" src="assets/cover-coffee.png" alt="" loading="lazy">
+        <div class="pc-body">
+          <span class="pill wip">In progress</span>
+          <h3>Coffee shop sales dashboard</h3>
+          <p>Turning a year of transaction data into a dashboard that answers which hours, products and days actually carry the business.</p>
+          <div class="pc-tags"><span class="tg">Excel</span><span class="tg">PivotTables</span><span class="tg">Data cleaning</span><span class="tg">Dashboards</span></div>
+        </div>
+      </a>
       <a class="pcard reveal" href="#feature">
         <img class="thumb" src="assets/cover-validation.png" alt="" loading="lazy">
         <div class="pc-body">
@@ -383,15 +399,6 @@ footer strong{color:#C3D2E4}
           <div class="pc-tags"><span class="tg">Python (AI-assisted)</span><span class="tg">Monte Carlo</span><span class="tg">Validation</span></div>
         </div>
       </a>
-      <div class="pcard reveal is-upcoming">
-        <img class="thumb" src="assets/cover-production.png" alt="" loading="lazy">
-        <div class="pc-body">
-          <span class="pill wip">In progress</span>
-          <h3>Production performance analysis</h3>
-          <p>Shift-level downtime, yield and throughput — testing assumed causes against the data.</p>
-          <div class="pc-tags"><span class="tg">Excel</span><span class="tg">PivotTables</span><span class="tg">Manufacturing</span></div>
-        </div>
-      </div>
       <div class="pcard reveal is-upcoming">
         <img class="thumb" src="assets/cover-sql.png" alt="" loading="lazy">
         <div class="pc-body">
@@ -403,11 +410,40 @@ footer strong{color:#C3D2E4}
       </div>
     </div>
 
+    <article class="inprog" id="coffee">
+      <div class="inprog-head">
+        <span class="pill wip">In progress</span>
+        <h3>Coffee shop sales dashboard</h3>
+        <p>A year of till transactions, turned into a dashboard that answers a specific question rather than just displaying numbers: <strong>which hours, products and days actually carry the business — and which ones only look busy?</strong></p>
+      </div>
+      <div class="inprog-body">
+        <div class="split">
+          <div>
+            <h4>What I'm building</h4>
+            <ul class="pts">
+              <li>Cleaning the raw transaction export first — duplicates, inconsistent product names, dates stored as text — and recording every fix so the process is repeatable.</li>
+              <li>Revenue and transaction volume broken down by hour, day of week, product and category using PivotTables.</li>
+              <li>A single-screen dashboard a manager could actually use, rather than a set of separate charts.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="t">What I'll report</h4>
+            <ul class="pts t">
+              <li>Which trading hours justify the staffing they get, and which don't.</li>
+              <li>Whether high-volume products are the same as high-margin ones — busy is not the same as profitable.</li>
+              <li>What I had to assume to reach each conclusion, and what would make it wrong.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="inprog-note">Published here when it's finished, in the same format as the project below: what I did, what I found, and what would make the answer wrong.</p>
+      </div>
+    </article>
+
     <article class="feature" id="feature">
       <div class="fhead">
         <span class="pill">Featured project</span>
         <h3>Model validation at scale: catching four flaws before publishing a result</h3>
-        <p>A rule-based model produced a trade ledger of around 12,400 records across 11 years. The headline numbers looked excellent — which is why I designed a set of tests to attack them before reporting anything. The tests found four problems, all of them in my own methodology.</p>
+        <p>I analysed a dataset of around 12,400 records covering 11 years. The results came back looking excellent — so before reporting anything, I built a set of tests to try to break them. The tests found four mistakes, all of them in my own method.</p>
       </div>
       <div class="fbody">
         <a class="shot" href="assets/smm-validation.png" target="_blank" rel="noopener">
@@ -430,11 +466,11 @@ footer strong{color:#C3D2E4}
           <div>
             <h4>The analysis</h4>
             <ul class="pts">
-              <li>Structured an 11-year trade ledger of ~12,400 records — date, instrument, direction and outcome per row — as the dataset for every test that followed.</li>
+              <li>Worked with a purchased historical dataset covering 11 years, which produced around 12,400 records — a date, category, direction and outcome on every row.</li>
               <li>Built the metrics layer: equity curve, maximum drawdown, risk-adjusted return, profit factor, win rate and monthly breakdowns.</li>
-              <li>Ran a Monte Carlo resample across 5,000 simulations, so the headline figure is a distribution of possible outcomes rather than one path that happened to occur.</li>
-              <li>Tested every input assumption across a range of values to see which ones the result actually depended on, ranked in a tornado chart.</li>
-              <li>Built a correlation matrix of monthly returns to test whether six instruments were six independent bets. Two moved together — so the diversification was thinner than the headline suggested.</li>
+              <li>Ran the whole thing 5,000 times with the records reshuffled, so the answer is a realistic range of outcomes rather than the single run that happened to occur.</li>
+              <li>Changed each assumption in turn to see which ones the result actually depended on, then ranked them in a tornado chart.</li>
+              <li>Compared the six data series month by month to check they were genuinely independent. Two moved together, so they were effectively counting the same thing twice.</li>
             </ul>
           </div>
           <div>
@@ -524,7 +560,7 @@ footer strong{color:#C3D2E4}
         <div class="tl-head"><h3>Analytics practice — self-directed</h3><span class="when">2024 – Present</span></div>
         <p class="org">Personal projects</p>
         <ul class="pts t">
-          <li>Sourced, cleaned and structured multi-year datasets across six data series, then built repeatable summaries from them.</li>
+          <li>Worked with purchased multi-year datasets across six data series, and built repeatable summaries from them.</li>
           <li>Defined what would count as success or failure before running the analysis, rather than deciding afterwards.</li>
           <li>Built simulation, sensitivity and correlation testing on top of the results to check how far the conclusions could be trusted.</li>
         </ul>
