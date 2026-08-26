@@ -243,6 +243,17 @@ footer{background:var(--navy);color:#9096B4;padding-block:2rem 2.5rem;font-size:
 footer p{margin:0 0 .55rem;max-width:78ch}
 footer strong{color:#C6C9DE}
 
+@media print{
+  .nav,#themebar{display:none}
+  body{background:#fff;color:#000}
+  .hero,.contact,footer{background:#fff!important;color:#000!important}
+  .hero .lede,.contact p,footer p{color:#333!important}
+  .hero h1,.contact h2{color:#000!important}
+  a{text-decoration:none;color:#000}
+  .pcard,.feature,.inprog,.skill,.facts,.cert-card{break-inside:avoid;box-shadow:none}
+  section{padding-block:1.2rem}
+  .reveal{opacity:1!important;transform:none!important}
+}
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s cubic-bezier(.22,.61,.36,1)}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.btn:hover,.pcard:hover,.cc:hover{transform:none}}
@@ -429,7 +440,7 @@ footer strong{color:#C6C9DE}
           <div>
             <h4 class="t">What I'll report</h4>
             <ul class="pts t">
-              <li>Which trading hours justify the staffing they get, and which don't.</li>
+              <li>Which hours of the day justify the staffing they get, and which don't.</li>
               <li>Whether high-volume products are the same as high-margin ones — busy is not the same as profitable.</li>
               <li>What I had to assume to reach each conclusion, and what would make it wrong.</li>
             </ul>
