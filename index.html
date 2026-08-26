@@ -6,7 +6,17 @@
 <title>Liam Grey — Data Analyst | Manchester, UK</title>
 <meta name="description" content="Liam Grey — data analyst in Manchester. Excel, Python and SQL. Analytical projects in operational performance and model validation. Seeking a data or business analyst apprenticeship.">
 <meta property="og:title" content="Liam Grey — Data Analyst">
-<meta property="og:description" content="Turning operational data into decisions people can act on.">
+<meta property="og:description" content="Turning operational data into decisions people can act on. Excel, Python and SQL. Manchester, UK.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://liamgreyba-cpu.github.io">
+<meta property="og:image" content="https://liamgreyba-cpu.github.io/assets/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Liam Grey — Data Analyst">
+<meta name="twitter:description" content="Turning operational data into decisions people can act on. Excel, Python and SQL. Manchester, UK.">
+<meta name="twitter:image" content="https://liamgreyba-cpu.github.io/assets/social-card.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -29,7 +39,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);font-si
 img{max-width:100%;display:block}
 a{color:var(--blue)}
 :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
-.wrap{max-width:70rem;margin:0 auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.wrap{max-width:74rem;margin:0 auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
 section{padding-block:clamp(3.25rem,6.5vw,5.5rem)}
 
 h1,h2,h3,h4{margin:0;letter-spacing:-.025em;line-height:1.15;font-weight:700}
@@ -60,7 +70,7 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
   background:radial-gradient(circle,rgba(46,125,246,.34),transparent 68%);pointer-events:none}
 .hero .wrap{position:relative;z-index:2}
 .hero-grid{display:grid;gap:2.5rem;align-items:center}
-@media(min-width:900px){.hero-grid{grid-template-columns:1fr 20rem;gap:4rem}}
+@media(min-width:900px){.hero-grid{grid-template-columns:minmax(0,1fr) 23rem;gap:4rem}}
 .hero .kicker{color:var(--teal)}
 .hero .kicker::before{background:var(--teal)}
 .hero h1{font-size:clamp(2.15rem,1.5rem+2.8vw,3.5rem);font-weight:800;margin-bottom:.75rem}
@@ -80,7 +90,7 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .hero-contact svg{width:15px;height:15px;flex:none;opacity:.85}
 
 .portrait{position:relative;justify-self:center}
-.portrait img{width:clamp(11rem,42vw,17rem);aspect-ratio:1;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 60px rgba(0,0,0,.42)}
+.portrait img{width:clamp(13rem,48vw,21rem);aspect-ratio:1;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 60px rgba(0,0,0,.42)}
 .portrait::after{content:"";position:absolute;inset:-10px;border-radius:30px;border:1px solid rgba(23,184,166,.35);pointer-events:none}
 
 /* ============ STATS ============ */
@@ -128,7 +138,7 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 @media(min-width:760px){.pcards{grid-template-columns:repeat(3,1fr)}}
 .pcard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);text-decoration:none;color:inherit;transition:.18s}
 .pcard:hover{transform:translateY(-3px);box-shadow:var(--sh-lg);border-color:#C9D8EA}
-.pcard .thumb{aspect-ratio:16/10;object-fit:cover;background:var(--navy)}
+.pcard .thumb{aspect-ratio:4/3;object-fit:cover;background:var(--navy)}
 .pcard .pc-body{padding:1.25rem 1.35rem 1.45rem;display:flex;flex-direction:column;flex:1}
 .pill{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.24rem .55rem;border-radius:6px;margin-bottom:.7rem;align-self:flex-start}
 .pill.done{background:#E7F8F4;color:#0C7A6D}
@@ -145,7 +155,7 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .feature .fhead p{color:#BDCCDE;margin:0;max-width:66ch;font-size:.95rem}
 .feature .fbody{padding:clamp(1.35rem,3vw,2.25rem)}
 .shot{display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#12161C;margin-bottom:1.75rem}
-.shot img{aspect-ratio:21/9;object-fit:cover;object-position:top left}
+.shot img{width:100%;height:auto}
 .shot figcaption{font-size:.8rem;color:var(--ink-3);background:var(--soft);padding:.6rem .85rem;border-top:1px solid var(--line)}
 .split{display:grid;gap:1.75rem}
 @media(min-width:780px){.split{grid-template-columns:1fr 1fr;column-gap:2.75rem}}
@@ -163,9 +173,17 @@ ul.pts code{font-family:ui-monospace,Menlo,monospace;font-size:.85em;background:
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.6rem;padding-top:1.3rem;border-top:1px solid var(--line)}
 
 /* ============ CERT ============ */
+.nextsteps{margin-top:1.85rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+.nextsteps h4{font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:1.1rem;padding-bottom:.5rem;border-bottom:2px solid var(--navy-3)}
+.nextsteps ol{margin:0;padding:0;list-style:none;counter-reset:ns;display:grid;gap:.85rem}
+.nextsteps li{position:relative;padding-left:2.5rem;font-size:.92rem;color:var(--ink-2);counter-increment:ns}
+.nextsteps li::before{content:counter(ns);position:absolute;left:0;top:.05em;width:1.65rem;height:1.65rem;border-radius:7px;background:var(--navy);color:#fff;font-size:.78rem;font-weight:700;display:grid;place-items:center}
+.nextsteps li b{color:var(--ink);font-weight:600}
+.nextsteps li code{font-family:ui-monospace,Menlo,monospace;font-size:.85em;background:var(--soft);border:1px solid var(--line);padding:.06em .3em;border-radius:4px}
+.nextsteps > p{margin:1.15rem 0 0;font-size:.9rem;color:var(--ink-2);font-style:italic}
 .cert{background:var(--soft);border-block:1px solid var(--line)}
 .cert-card{display:grid;gap:2rem;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(1.35rem,3vw,2.25rem);box-shadow:var(--sh)}
-@media(min-width:860px){.cert-card{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:2.75rem}}
+@media(min-width:860px){.cert-card{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:2.75rem}}
 .cert-thumb{display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;transition:.18s}
 .cert-thumb:hover{border-color:var(--blue);box-shadow:var(--sh-lg);transform:translateY(-2px)}
 .cert-info .pill{margin-bottom:.85rem}
@@ -412,10 +430,26 @@ footer strong{color:#C3D2E4}
           </div>
         </div>
 
+        <div class="nextsteps">
+          <h4>What I'd do differently</h4>
+          <ol>
+            <li><b>Fix the bias, then re-run end to end.</b> Add <code>.shift(1)</code> to the daily filter and rebuild the full result set. Until that's done, every figure downstream is unproven — so this is the first job, not a refinement.</li>
+            <li><b>Rebuild the bias test properly.</b> The check should re-run the pipeline with and without the fix and compare outputs, rather than filtering records out of a result that already exists.</li>
+            <li><b>Ground the cost assumptions in real data.</b> Replace the self-referential baseline with observed spread and execution costs, so the stress test measures something external to my own model.</li>
+            <li><b>Make the split genuinely blind.</b> Re-select parameters inside each training window before testing on the next one, rather than choosing rules once across the whole period.</li>
+          </ol>
+          <p>My expectation is that a corrected version produces a substantially weaker result. That's the point of doing it.</p>
+        </div>
+
         <div class="callout">
           <p><strong>Why this is the project I lead with.</strong> A result this clean usually means the test is wrong, not that the signal is real. Finding that out myself — rather than having it found for me — is the part of analysis I'd want a team to rely on me for.</p>
           <p><strong>How it was built.</strong> The Python was written with Claude, Anthropic's AI assistant. I designed the rules and test criteria, sourced and structured the data, ran and debugged it across many iterations, interpreted the output and identified the four issues above. I'm now working through writing the same pipelines unaided.</p>
         </div>
+
+        <a class="btn btn-o" href="https://github.com/liamgreyba-cpu/model-validation-suite" target="_blank" rel="noopener" style="margin-top:1.5rem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-1-2.6c3.1-.3 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.4 3.8c0 5.5 3.3 6.7 6.4 7A3.4 3.4 0 0 0 9 18.1V22"/></svg>
+          View the code on GitHub
+        </a>
 
         <div class="chips">
           <span class="tg">Python</span><span class="tg">pandas</span><span class="tg">NumPy</span><span class="tg">Matplotlib</span>
