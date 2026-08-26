@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liam Grey — Data Analyst | Manchester, UK</title>
+<meta name="description" content="Liam Grey — data analyst in Manchester. Excel, Python and SQL. Analytical projects in operational performance and model validation. Seeking a data or business analyst apprenticeship.">
+<meta property="og:title" content="Liam Grey — Data Analyst">
+<meta property="og:description" content="Turning operational data into decisions people can act on.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230F2138'/><text x='32' y='44' font-size='34' font-family='Helvetica,Arial' font-weight='700' fill='%232E7DF6' text-anchor='middle'>LG</text></svg>">
+<style>
+:root{
+  --navy:#0F2138; --navy-2:#17314F; --navy-3:#1E3E62;
+  --blue:#2E7DF6; --blue-d:#1B5FCC; --teal:#17B8A6;
+  --bg:#FFFFFF; --soft:#F4F7FB; --line:#E1E8F0;
+  --ink:#10233B; --ink-2:#51657D; --ink-3:#7C8DA3;
+  --f:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --sh:0 1px 2px rgba(16,35,59,.05),0 8px 24px rgba(16,35,59,.07);
+  --sh-lg:0 2px 4px rgba(16,35,59,.06),0 18px 44px rgba(16,35,59,.12);
+  --r:14px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:70px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--blue)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{max-width:70rem;margin:0 auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+section{padding-block:clamp(3.25rem,6.5vw,5.5rem)}
+
+h1,h2,h3,h4{margin:0;letter-spacing:-.025em;line-height:1.15;font-weight:700}
+h2{font-size:clamp(1.65rem,1.35rem+1.4vw,2.35rem)}
+h3{font-size:1.2rem;letter-spacing:-.02em}
+.kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--blue);margin-bottom:.9rem}
+.kicker::before{content:"";width:1.6rem;height:2px;background:var(--blue);border-radius:2px}
+.sec-intro{color:var(--ink-2);max-width:60ch;margin:.85rem 0 2.5rem;font-size:1.02rem}
+
+/* ============ NAV ============ */
+.nav{position:sticky;top:0;z-index:50;background:rgba(15,33,56,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.09)}
+.nav .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.85rem}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:#fff;font-weight:800;font-size:.98rem;letter-spacing:-.02em}
+.logo .mark{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--teal));display:grid;place-items:center;font-size:.78rem;font-weight:800;color:#fff}
+.nav nav{display:flex;gap:1.6rem;align-items:center}
+.nav nav a{font-size:.875rem;font-weight:500;color:#B9C7D9;text-decoration:none;transition:color .15s}
+.nav nav a:hover{color:#fff}
+.nav .cta{background:var(--blue);color:#fff;padding:.5rem .95rem;border-radius:8px;font-weight:600}
+.nav .cta:hover{background:var(--blue-d);color:#fff}
+@media(max-width:820px){.nav nav a:not(.cta){display:none}}
+
+/* ============ HERO ============ */
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 62%,var(--navy-3) 100%);color:#fff;position:relative;overflow:hidden;padding-block:clamp(3rem,7vw,5.5rem)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:52px 52px;mask-image:radial-gradient(ellipse 90% 70% at 60% 30%,#000,transparent)}
+.hero::after{content:"";position:absolute;width:36rem;height:36rem;right:-10rem;top:-12rem;border-radius:50%;
+  background:radial-gradient(circle,rgba(46,125,246,.34),transparent 68%);pointer-events:none}
+.hero .wrap{position:relative;z-index:2}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1fr 20rem;gap:4rem}}
+.hero .kicker{color:var(--teal)}
+.hero .kicker::before{background:var(--teal)}
+.hero h1{font-size:clamp(2.15rem,1.5rem+2.8vw,3.5rem);font-weight:800;margin-bottom:.75rem}
+.hero .subtitle{font-size:clamp(1.02rem,.98rem+.35vw,1.2rem);font-weight:600;color:var(--teal);margin:0 0 1.15rem}
+.hero p.lede{color:#C3D2E4;max-width:52ch;margin:0;font-size:1.02rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-size:.92rem;font-weight:600;text-decoration:none;padding:.78rem 1.35rem;border-radius:10px;transition:.16s;border:1px solid transparent;cursor:pointer}
+.btn-p{background:var(--blue);color:#fff}
+.btn-p:hover{background:var(--blue-d);transform:translateY(-1px);box-shadow:0 8px 20px rgba(46,125,246,.32)}
+.btn-g{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.2)}
+.btn-g:hover{background:rgba(255,255,255,.14)}
+.btn-o{background:#fff;color:var(--ink);border-color:var(--line);box-shadow:var(--sh)}
+.btn-o:hover{border-color:var(--blue);color:var(--blue)}
+.hero-contact{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;margin-top:1.9rem;font-size:.875rem;color:#A9BBD1}
+.hero-contact a{color:#A9BBD1;text-decoration:none;display:inline-flex;align-items:center;gap:.45rem}
+.hero-contact a:hover{color:#fff}
+.hero-contact svg{width:15px;height:15px;flex:none;opacity:.85}
+
+.portrait{position:relative;justify-self:center}
+.portrait img{width:clamp(11rem,42vw,17rem);aspect-ratio:1;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 60px rgba(0,0,0,.42)}
+.portrait::after{content:"";position:absolute;inset:-10px;border-radius:30px;border:1px solid rgba(23,184,166,.35);pointer-events:none}
+
+/* ============ STATS ============ */
+.stats{background:var(--soft);border-block:1px solid var(--line)}
+.stats .wrap{padding-block:2.25rem}
+.stat-grid{display:grid;gap:1.5rem;text-align:center}
+@media(min-width:640px){.stat-grid{grid-template-columns:repeat(4,1fr)}}
+.stat b{display:block;font-size:clamp(1.6rem,1.3rem+1vw,2.1rem);font-weight:800;letter-spacing:-.03em;color:var(--navy);line-height:1.1}
+.stat span{display:block;font-size:.8rem;font-weight:600;letter-spacing:.03em;color:var(--ink-3);margin-top:.3rem}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;gap:2.5rem}
+@media(min-width:940px){.about-grid{grid-template-columns:1.45fr 1fr;gap:3.5rem}}
+.about-grid p{color:var(--ink-2);margin:0 0 1.05em}
+.about-grid p:last-child{margin:0}
+.facts{background:var(--soft);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;align-self:start}
+.facts h4{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:1rem}
+.facts dl{margin:0;display:grid;gap:.85rem}
+.facts .r{display:flex;justify-content:space-between;gap:1rem;padding-bottom:.85rem;border-bottom:1px solid var(--line);font-size:.9rem}
+.facts .r:last-child{border-bottom:0;padding-bottom:0}
+.facts dt{color:var(--ink-3);font-weight:500}
+.facts dd{margin:0;font-weight:600;text-align:right}
+
+/* ============ SKILLS ============ */
+.skills{background:var(--soft);border-block:1px solid var(--line)}
+.skill-grid{display:grid;gap:1.25rem}
+@media(min-width:800px){.skill-grid{grid-template-columns:repeat(3,1fr)}}
+.skill{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.6rem;box-shadow:var(--sh)}
+.ico{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;margin-bottom:1.05rem;background:linear-gradient(135deg,var(--blue),#5B9BFF)}
+.ico.t{background:linear-gradient(135deg,var(--teal),#3FD6C4)}
+.ico.n{background:linear-gradient(135deg,var(--navy-2),var(--navy-3))}
+.ico svg{width:21px;height:21px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.skill h3{font-size:1.05rem;margin-bottom:.9rem}
+.skill ul{list-style:none;margin:0;padding:0;font-size:.92rem}
+.skill li{display:flex;align-items:baseline;gap:.55rem;padding:.4rem 0;color:var(--ink-2);border-bottom:1px solid var(--line)}
+.skill li:last-child{border-bottom:0}
+.skill li b{color:var(--ink);font-weight:600}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex:none;transform:translateY(-1px)}
+.dot.t{background:var(--teal)}
+.dot.g{background:var(--line)}
+.mini{margin-left:auto;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);background:var(--soft);border:1px solid var(--line);padding:.1rem .42rem;border-radius:5px;white-space:nowrap}
+
+/* ============ PROJECTS ============ */
+.pcards{display:grid;gap:1.5rem;margin-bottom:3.5rem}
+@media(min-width:760px){.pcards{grid-template-columns:repeat(3,1fr)}}
+.pcard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);text-decoration:none;color:inherit;transition:.18s}
+.pcard:hover{transform:translateY(-3px);box-shadow:var(--sh-lg);border-color:#C9D8EA}
+.pcard .thumb{aspect-ratio:16/10;object-fit:cover;background:var(--navy)}
+.pcard .pc-body{padding:1.25rem 1.35rem 1.45rem;display:flex;flex-direction:column;flex:1}
+.pill{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.24rem .55rem;border-radius:6px;margin-bottom:.7rem;align-self:flex-start}
+.pill.done{background:#E7F8F4;color:#0C7A6D}
+.pill.wip{background:#FFF4E0;color:#9A6100}
+.pcard h3{font-size:1.03rem;margin-bottom:.45rem}
+.pcard p{font-size:.88rem;color:var(--ink-2);margin:0 0 1rem}
+.pc-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:auto}
+.tg{font-size:.7rem;font-weight:600;color:var(--ink-3);background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:.15rem .45rem}
+
+.feature{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh-lg);overflow:hidden}
+.feature .fhead{background:var(--navy);color:#fff;padding:1.6rem clamp(1.35rem,3vw,2.25rem)}
+.feature .fhead .pill{background:rgba(23,184,166,.18);color:var(--teal)}
+.feature .fhead h3{font-size:clamp(1.2rem,1.05rem+.6vw,1.55rem);margin-bottom:.55rem}
+.feature .fhead p{color:#BDCCDE;margin:0;max-width:66ch;font-size:.95rem}
+.feature .fbody{padding:clamp(1.35rem,3vw,2.25rem)}
+.shot{display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#12161C;margin-bottom:1.75rem}
+.shot img{aspect-ratio:21/9;object-fit:cover;object-position:top left}
+.shot figcaption{font-size:.8rem;color:var(--ink-3);background:var(--soft);padding:.6rem .85rem;border-top:1px solid var(--line)}
+.split{display:grid;gap:1.75rem}
+@media(min-width:780px){.split{grid-template-columns:1fr 1fr;column-gap:2.75rem}}
+.split h4{font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.9rem;padding-bottom:.5rem;border-bottom:2px solid var(--blue)}
+.split h4.t{border-bottom-color:var(--teal)}
+ul.pts{list-style:none;margin:0;padding:0;font-size:.92rem}
+ul.pts li{position:relative;padding-left:1.35rem;margin-bottom:.65rem;color:var(--ink-2)}
+ul.pts li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:2px;background:var(--blue)}
+ul.pts.t li::before{background:var(--teal)}
+ul.pts b{color:var(--ink);font-weight:600}
+ul.pts code{font-family:ui-monospace,Menlo,monospace;font-size:.85em;background:var(--soft);border:1px solid var(--line);padding:.06em .3em;border-radius:4px}
+.callout{margin-top:1.85rem;background:var(--soft);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:0 10px 10px 0;padding:1.25rem 1.4rem;font-size:.9rem;color:var(--ink-2)}
+.callout p{margin:0 0 .6rem}.callout p:last-child{margin:0}
+.callout strong{color:var(--ink);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.6rem;padding-top:1.3rem;border-top:1px solid var(--line)}
+
+/* ============ CERT ============ */
+.cert{background:var(--soft);border-block:1px solid var(--line)}
+.cert-card{display:grid;gap:2rem;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(1.35rem,3vw,2.25rem);box-shadow:var(--sh)}
+@media(min-width:860px){.cert-card{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:2.75rem}}
+.cert-thumb{display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;transition:.18s}
+.cert-thumb:hover{border-color:var(--blue);box-shadow:var(--sh-lg);transform:translateY(-2px)}
+.cert-info .pill{margin-bottom:.85rem}
+.cert-card h3{margin-bottom:.6rem;font-size:clamp(1.1rem,1rem+.5vw,1.35rem)}
+.cert-card p{margin:0 0 1.15rem;color:var(--ink-2);font-size:.93rem}
+.courselist{list-style:none;margin:0 0 1.5rem;padding:0;display:grid;gap:.28rem 1.25rem;font-size:.82rem;color:var(--ink-2)}
+@media(min-width:520px){.courselist{grid-template-columns:1fr 1fr}}
+.courselist li{position:relative;padding-left:1.05rem}
+.courselist li::before{content:"";position:absolute;left:0;top:.52em;width:5px;height:5px;border-radius:50%;background:var(--teal)}
+.verify{padding:.65rem 1.1rem;font-size:.87rem}
+
+/* ============ EXPERIENCE ============ */
+.tl{position:relative;padding-left:2rem}
+.tl::before{content:"";position:absolute;left:6px;top:.5rem;bottom:.5rem;width:2px;background:var(--line)}
+.tl-item{position:relative;padding-bottom:2.25rem}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:"";position:absolute;left:-2rem;top:.45rem;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--blue)}
+.tl-item.alt::before{border-color:var(--teal)}
+.tl-head{display:flex;flex-wrap:wrap;gap:.2rem 1rem;align-items:baseline;justify-content:space-between;margin-bottom:.2rem}
+.tl-head h3{font-size:1.05rem}
+.tl-head .when{font-size:.82rem;font-weight:600;color:var(--ink-3);white-space:nowrap}
+.tl-item .org{font-size:.9rem;font-weight:600;color:var(--blue);margin:0 0 .7rem}
+.tl-item.alt .org{color:var(--teal)}
+
+/* ============ CONTACT ============ */
+.contact{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;opacity:.45;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:52px 52px;mask-image:radial-gradient(ellipse 80% 80% at 30% 50%,#000,transparent)}
+.contact .wrap{position:relative;z-index:2}
+.contact .kicker{color:var(--teal)}.contact .kicker::before{background:var(--teal)}
+.contact p.lede{color:#C3D2E4;max-width:54ch;margin:.85rem 0 0}
+.contact-grid{display:grid;gap:.9rem;margin-top:2.25rem}
+@media(min-width:700px){.contact-grid{grid-template-columns:repeat(3,1fr);max-width:52rem}}
+.cc{display:flex;align-items:center;gap:.9rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:1.05rem 1.15rem;text-decoration:none;color:#fff;transition:.16s}
+.cc:hover{background:rgba(255,255,255,.14);border-color:var(--teal);transform:translateY(-2px)}
+.cc svg{width:20px;height:20px;stroke:var(--teal);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.cc span{display:block;font-size:.72rem;color:#9BB0C8;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+.cc b{display:block;font-size:.9rem;font-weight:600;word-break:break-word}
+
+footer{background:var(--navy);color:#8FA3BC;padding-block:2rem 2.5rem;font-size:.82rem;border-top:1px solid rgba(255,255,255,.09)}
+footer p{margin:0 0 .55rem;max-width:78ch}
+footer strong{color:#C3D2E4}
+
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s cubic-bezier(.22,.61,.36,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.btn:hover,.pcard:hover,.cc:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="wrap bar">
+    <a class="logo" href="#top"><span class="mark">LG</span> Liam Grey</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a class="cta" href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker">Manchester, United Kingdom</span>
+        <h1>Liam Grey</h1>
+        <p class="subtitle">Data Analyst — Excel · Python · SQL</p>
+        <p class="lede">I turn operational data into answers people can act on. I build the full pipeline — collection, cleaning, analysis and validation — and I test my conclusions before I present them.</p>
+        <div class="hero-cta">
+          <a class="btn btn-p" href="#projects">View my projects</a>
+          <a class="btn btn-g" href="assets/Liam-Grey-CV.pdf">Download CV</a>
+        </div>
+        <div class="hero-contact">
+          <a href="mailto:Liamgrey286@icloud.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>Liamgrey286@icloud.com</a>
+          <a href="tel:+447534616719"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>07534 616719</a>
+          <a href="https://www.linkedin.com/in/liam--grey/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 21V9m0 4a4 4 0 0 1 8 0v8"/></svg>LinkedIn</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="assets/headshot.jpg" alt="Liam Grey" width="400" height="400">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat-grid">
+      <div class="stat"><b>12,400+</b><span>Records analysed</span></div>
+      <div class="stat"><b>5,000</b><span>Simulations run</span></div>
+      <div class="stat"><b>11 yrs</b><span>Of data modelled</span></div>
+      <div class="stat"><b>9</b><span>Certificate courses</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <span class="kicker">About</span>
+    <h2>I analyse operational data — and I've worked where it's generated.</h2>
+    <div class="about-grid" style="margin-top:1.75rem">
+      <div>
+        <p>I build the full pipeline: sourcing and cleaning the data, defining the metrics, running the analysis, then stress-testing the conclusion before I present it. That last step matters most to me — a finding nobody has challenged isn't a finding worth acting on.</p>
+        <p>What I bring that most entry-level analysts don't is context. I work in high-volume food production, so I've seen how operational numbers are actually produced: where they get recorded, where they get recorded wrong, and what a supervisor means when they say a line ran badly. That means I know which questions are worth asking before I open the spreadsheet.</p>
+        <p>Behind that sits formal training and self-directed work — the Google Data Analytics Professional Certificate, Excel to a working standard, and Python for datasets too large for a spreadsheet. The featured project below is a validation suite I built to attack my own results, and it caught four flaws in my methodology before I reported anything.</p>
+        <p>I'm looking for a data or business analyst apprenticeship where I can apply that to real commercial problems — ideally in operations, manufacturing or logistics.</p>
+      </div>
+      <aside class="facts">
+        <h4>At a glance</h4>
+        <dl>
+          <div class="r"><dt>Location</dt><dd>Manchester, UK</dd></div>
+          <div class="r"><dt>Looking for</dt><dd>Analyst apprenticeship</dd></div>
+          <div class="r"><dt>Availability</dt><dd>Immediate</dd></div>
+          <div class="r"><dt>Certificate</dt><dd>Google Data Analytics</dd></div>
+          <div class="r"><dt>Core tools</dt><dd>Excel, Python</dd></div>
+          <div class="r"><dt>Sector interest</dt><dd>Operations, manufacturing</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <div class="wrap">
+    <span class="kicker">Capability</span>
+    <h2>Skills and tools</h2>
+    <p class="sec-intro">What I use day to day, and what I'm actively adding.</p>
+    <div class="skill-grid">
+      <div class="skill">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg></div>
+        <h3>Spreadsheets &amp; reporting</h3>
+        <ul>
+          <li><span class="dot"></span><b>PivotTables</b></li>
+          <li><span class="dot"></span><b>XLOOKUP &amp; SUMIFS</b></li>
+          <li><span class="dot"></span><b>Data cleaning &amp; validation</b></li>
+          <li><span class="dot"></span><b>Charting &amp; dashboards</b></li>
+          <li><span class="dot g"></span><b>Power Query</b><span class="mini">Adding</span></li>
+        </ul>
+      </div>
+      <div class="skill">
+        <div class="ico t"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+        <h3>Programming &amp; querying</h3>
+        <ul>
+          <li><span class="dot t"></span><b>Python</b> — pandas, NumPy</li>
+          <li><span class="dot t"></span><b>Matplotlib</b></li>
+          <li><span class="dot t"></span><b>Data pipelines</b></li>
+          <li><span class="dot g"></span><b>SQL</b> — joins, CTEs<span class="mini">Adding</span></li>
+          <li><span class="dot g"></span><b>Power BI</b><span class="mini">Adding</span></li>
+        </ul>
+      </div>
+      <div class="skill">
+        <div class="ico n"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Analytical methods</h3>
+        <ul>
+          <li><span class="dot"></span><b>Monte Carlo simulation</b></li>
+          <li><span class="dot"></span><b>Sensitivity analysis</b></li>
+          <li><span class="dot"></span><b>Train / test validation</b></li>
+          <li><span class="dot"></span><b>Correlation analysis</b></li>
+          <li><span class="dot"></span><b>Descriptive statistics</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <span class="kicker">Portfolio</span>
+    <h2>Projects</h2>
+    <p class="sec-intro">Self-directed analytical work. Each project covers the full process — from raw data through to a conclusion I've tested against its own weaknesses.</p>
+
+    <div class="pcards">
+      <a class="pcard reveal" href="#feature">
+        <img class="thumb" src="assets/cover-validation.png" alt="" loading="lazy">
+        <div class="pc-body">
+          <span class="pill done">Complete</span>
+          <h3>Model validation at scale</h3>
+          <p>Stress-testing an 11-year model across 12,400 records and 5,000 simulations.</p>
+          <div class="pc-tags"><span class="tg">Python</span><span class="tg">pandas</span><span class="tg">Monte Carlo</span></div>
+        </div>
+      </a>
+      <a class="pcard reveal" href="#feature" aria-disabled="true" style="pointer-events:none;opacity:.94">
+        <img class="thumb" src="assets/cover-production.png" alt="" loading="lazy">
+        <div class="pc-body">
+          <span class="pill wip">In progress</span>
+          <h3>Production performance analysis</h3>
+          <p>Shift-level downtime, yield and throughput — testing assumed causes against the data.</p>
+          <div class="pc-tags"><span class="tg">Excel</span><span class="tg">Power Query</span><span class="tg">Manufacturing</span></div>
+        </div>
+      </a>
+      <a class="pcard reveal" href="#feature" aria-disabled="true" style="pointer-events:none;opacity:.94">
+        <img class="thumb" src="assets/cover-sql.png" alt="" loading="lazy">
+        <div class="pc-body">
+          <span class="pill wip">In progress</span>
+          <h3>SQL analysis of a public dataset</h3>
+          <p>Joins, aggregation and window functions, written up as findings rather than queries.</p>
+          <div class="pc-tags"><span class="tg">SQL</span><span class="tg">Reporting</span></div>
+        </div>
+      </a>
+    </div>
+
+    <article class="feature" id="feature">
+      <div class="fhead">
+        <span class="pill">Featured project</span>
+        <h3>Model validation at scale: catching four flaws before publishing a result</h3>
+        <p>I built a rule-based model over eleven years of historical data and ran it across 12,400 records. The output was unusually strong — so before reporting anything, I built a validation suite to attack it. It found four issues in my own methodology.</p>
+      </div>
+      <div class="fbody">
+        <a class="shot" href="assets/smm-validation.png" target="_blank" rel="noopener">
+          <img src="assets/smm-validation.png" alt="Validation dashboard showing entry-shift analysis, cost stress testing, parameter stability comparison and a correlation matrix" loading="lazy">
+          <figcaption>Validation suite — bias testing, cost stress, parameter stability and correlation. Click to view full size.</figcaption>
+        </a>
+
+        <div class="split">
+          <div>
+            <h4>What I built</h4>
+            <ul class="pts">
+              <li>A processing pipeline over 5-minute historical data producing a per-record ledger of ~12,400 rows.</li>
+              <li>A metrics layer computing risk-adjusted return, drawdown series, profit factor and monthly breakdowns.</li>
+              <li>A Monte Carlo resampler running 5,000 simulations, so the output is a distribution rather than a single path.</li>
+              <li>Sensitivity analysis across every input assumption, summarised in a tornado chart.</li>
+              <li>A correlation matrix to test whether six inputs were genuinely independent. Two weren't.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="t">What the validation caught</h4>
+            <ul class="pts t">
+              <li><b>Lookahead bias.</b> The daily filter used <code>resample('D').last()</code> without <code>.shift(1)</code>, letting the model see the same day's closing value before deciding. It needs the previous day's.</li>
+              <li><b>A test that didn't test what it claimed.</b> My bias check removed records near the session start instead of re-running the pipeline, so it couldn't detect the issue above.</li>
+              <li><b>A circular cost assumption.</b> Baseline cost was defined as a percentage of average loss, so "survives 10× costs" only meant surviving a figure I'd set myself.</li>
+              <li><b>A train/test split that wasn't blind.</b> Records were sliced by date from one run whose rules were chosen using the full period, overstating out-of-sample performance.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p><strong>Why this is the project I lead with.</strong> A result this clean usually means the test is wrong, not that the signal is real. Finding that out myself — rather than having it found for me — is the part of analysis I'd want a team to rely on me for.</p>
+          <p><strong>How it was built.</strong> The Python was written with Claude, Anthropic's AI assistant. I designed the rules and test criteria, sourced and structured the data, ran and debugged it across many iterations, interpreted the output and identified the four issues above. I'm now working through writing the same pipelines unaided.</p>
+        </div>
+
+        <div class="chips">
+          <span class="tg">Python</span><span class="tg">pandas</span><span class="tg">NumPy</span><span class="tg">Matplotlib</span>
+          <span class="tg">Monte Carlo</span><span class="tg">Sensitivity analysis</span><span class="tg">Correlation</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- CERT -->
+<section class="cert">
+  <div class="wrap">
+    <span class="kicker">Certification</span>
+    <h2>Formal training</h2>
+    <p class="sec-intro">Completed alongside full-time shift work.</p>
+    <div class="cert-card">
+      <a class="cert-thumb" href="assets/certificate.jpg" target="_blank" rel="noopener">
+        <img src="assets/certificate.jpg" alt="Google Data Analytics Professional Certificate awarded to Liam Grey, May 2026" loading="lazy">
+      </a>
+      <div class="cert-info">
+        <span class="pill done">Completed May 2026</span>
+        <h3>Google Data Analytics Professional Certificate</h3>
+        <p>Nine courses developed by Google, with hands-on practice-based assessments across the full analysis process — asking the right questions, preparing and cleaning data, analysis, visualisation and Python — finishing with a capstone case study.</p>
+        <ul class="courselist">
+          <li>Foundations: Data, Data, Everywhere</li>
+          <li>Ask Questions to Make Data-Driven Decisions</li>
+          <li>Prepare Data for Exploration</li>
+          <li>Process Data from Dirty to Clean</li>
+          <li>Analyze Data to Answer Questions</li>
+          <li>Share Data Through the Art of Visualization</li>
+          <li>Introduction to Data Analysis Using Python</li>
+          <li>Capstone: Complete a Case Study</li>
+        </ul>
+        <a class="btn btn-o verify" href="https://coursera.org/verify/professional-cert/AGJWTYK6QJT6" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M20 6 9 17l-5-5"/></svg>
+          Verify this certificate
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <span class="kicker">Background</span>
+    <h2>Experience &amp; education</h2>
+    <div class="tl" style="margin-top:2.25rem">
+      <div class="tl-item">
+        <div class="tl-head"><h3>Poultry Operative</h3><span class="when">Apr 2025 – Present</span></div>
+        <p class="org">Birtwistle's Catering Butchers · Manchester</p>
+        <ul class="pts">
+          <li>Work to documented procedures and quality standards in a high-volume, traceability-critical production environment.</li>
+          <li>Daily exposure to how downtime, yield loss and rework drive output — the operational metrics this sector reports on.</li>
+          <li>Consistent record for reliability and accuracy in a role where errors carry direct cost.</li>
+        </ul>
+      </div>
+      <div class="tl-item alt">
+        <div class="tl-head"><h3>Analytics practice — self-directed</h3><span class="when">2024 – Present</span></div>
+        <p class="org">Personal projects</p>
+        <ul class="pts t">
+          <li>Sourced, cleaned and structured multi-year datasets across six data series.</li>
+          <li>Defined pass/fail criteria before testing rather than after, then analysed expected value, drawdown, win rate and risk of ruin.</li>
+          <li>Built Monte Carlo simulation, sensitivity analysis and correlation testing on top of the results.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-head"><h3>Operational and technical roles</h3><span class="when">Earlier</span></div>
+        <p class="org">Various</p>
+        <ul class="pts">
+          <li>Structured, process-driven environments with an emphasis on procedure, quality standards and reliability.</li>
+        </ul>
+      </div>
+      <div class="tl-item alt">
+        <div class="tl-head"><h3>GCSEs</h3><span class="when">St Patrick's RC High School</span></div>
+        <p class="org">Manchester</p>
+        <ul class="pts t">
+          <li>Including ICT (A*), English (B) and Mathematics (C). Full record available on my CV.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <span class="kicker">Get in touch</span>
+    <h2>Open to analyst apprenticeships and junior roles.</h2>
+    <p class="lede">Based in Manchester and available across Greater Manchester. If you're hiring and want to talk through any of the work above, I'd be glad to hear from you.</p>
+    <div class="contact-grid">
+      <a class="cc" href="mailto:Liamgrey286@icloud.com">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        <div><span>Email</span><b>Liamgrey286@icloud.com</b></div>
+      </a>
+      <a class="cc" href="tel:+447534616719">
+        <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+        <div><span>Phone</span><b>07534 616719</b></div>
+      </a>
+      <a class="cc" href="https://www.linkedin.com/in/liam--grey/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 21V9m0 4a4 4 0 0 1 8 0v8"/></svg>
+        <div><span>Profile</span><b>linkedin.com/in/liam--grey</b></div>
+      </a>
+    </div>
+    <div class="hero-cta" style="margin-top:1.75rem">
+      <a class="btn btn-p" href="assets/Liam-Grey-CV.pdf">Download CV (PDF)</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Note on the featured project.</strong> This is an exercise in analytical methodology using historical market data. No capital was deployed and nothing here constitutes investment advice. Backtested results are hypothetical and, as documented above, contain identified methodological issues.</p>
+    <p>© <span id="yr">2026</span> Liam Grey · Manchester, United Kingdom</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var r=document.querySelectorAll('.reveal');
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window)){
+    r.forEach(function(e){e.classList.add('in')});return;
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+  })},{threshold:.08,rootMargin:'0px 0px -6% 0px'});
+  r.forEach(function(e,i){e.style.transitionDelay=(i%3*70)+'ms';io.observe(e)});
+})();
+</script>
+</body>
+</html>
