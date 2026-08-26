@@ -26,7 +26,7 @@
   --navy:#0F2138; --navy-2:#17314F; --navy-3:#1E3E62;
   --blue:#2E7DF6; --blue-d:#1B5FCC; --teal:#17B8A6;
   --bg:#FFFFFF; --soft:#F4F7FB; --line:#E1E8F0;
-  --ink:#10233B; --ink-2:#51657D; --ink-3:#7C8DA3;
+  --ink:#10233B; --ink-2:#51657D; --ink-3:#5F6E86;
   --f:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
   --sh:0 1px 2px rgba(16,35,59,.05),0 8px 24px rgba(16,35,59,.07);
   --sh-lg:0 2px 4px rgba(16,35,59,.06),0 18px 44px rgba(16,35,59,.12);
@@ -37,7 +37,7 @@ html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:70p
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
-a{color:var(--blue)}
+a{color:var(--blue-d)}
 :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
 .wrap{max-width:74rem;margin:0 auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
 section{padding-block:clamp(3.25rem,6.5vw,5.5rem)}
@@ -45,7 +45,7 @@ section{padding-block:clamp(3.25rem,6.5vw,5.5rem)}
 h1,h2,h3,h4{margin:0;letter-spacing:-.025em;line-height:1.15;font-weight:700}
 h2{font-size:clamp(1.65rem,1.35rem+1.4vw,2.35rem)}
 h3{font-size:1.2rem;letter-spacing:-.02em}
-.kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--blue);margin-bottom:.9rem}
+.kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--blue-d);margin-bottom:.9rem}
 .kicker::before{content:"";width:1.6rem;height:2px;background:var(--blue);border-radius:2px}
 .sec-intro{color:var(--ink-2);max-width:60ch;margin:.85rem 0 2.5rem;font-size:1.02rem}
 
@@ -57,8 +57,8 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .nav nav{display:flex;gap:1.6rem;align-items:center}
 .nav nav a{font-size:.875rem;font-weight:500;color:#B9C7D9;text-decoration:none;transition:color .15s}
 .nav nav a:hover{color:#fff}
-.nav .cta{background:var(--blue);color:#fff;padding:.5rem .95rem;border-radius:8px;font-weight:600}
-.nav .cta:hover{background:var(--blue-d);color:#fff}
+.nav .cta{background:var(--blue-d);color:#fff;padding:.5rem .95rem;border-radius:8px;font-weight:600}
+.nav .cta:hover{background:#154BA3;color:#fff}
 @media(max-width:820px){.nav nav a:not(.cta){display:none}}
 
 /* ============ HERO ============ */
@@ -70,7 +70,7 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
   background:radial-gradient(circle,rgba(46,125,246,.34),transparent 68%);pointer-events:none}
 .hero .wrap{position:relative;z-index:2}
 .hero-grid{display:grid;gap:2.5rem;align-items:center}
-@media(min-width:900px){.hero-grid{grid-template-columns:minmax(0,1fr) 23rem;gap:4rem}}
+@media(min-width:900px){.hero-grid{grid-template-columns:minmax(0,1fr) 26rem;gap:3.5rem}}
 .hero .kicker{color:var(--teal)}
 .hero .kicker::before{background:var(--teal)}
 .hero h1{font-size:clamp(2.15rem,1.5rem+2.8vw,3.5rem);font-weight:800;margin-bottom:.75rem}
@@ -78,8 +78,8 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .hero p.lede{color:#C3D2E4;max-width:52ch;margin:0;font-size:1.02rem}
 .hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2rem}
 .btn{display:inline-flex;align-items:center;gap:.5rem;font-size:.92rem;font-weight:600;text-decoration:none;padding:.78rem 1.35rem;border-radius:10px;transition:.16s;border:1px solid transparent;cursor:pointer}
-.btn-p{background:var(--blue);color:#fff}
-.btn-p:hover{background:var(--blue-d);transform:translateY(-1px);box-shadow:0 8px 20px rgba(46,125,246,.32)}
+.btn-p{background:var(--blue-d);color:#fff}
+.btn-p:hover{background:#154BA3;transform:translateY(-1px);box-shadow:0 8px 20px rgba(46,125,246,.32)}
 .btn-g{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.2)}
 .btn-g:hover{background:rgba(255,255,255,.14)}
 .btn-o{background:#fff;color:var(--ink);border-color:var(--line);box-shadow:var(--sh)}
@@ -90,7 +90,7 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .hero-contact svg{width:15px;height:15px;flex:none;opacity:.85}
 
 .portrait{position:relative;justify-self:center}
-.portrait img{width:clamp(13rem,48vw,21rem);aspect-ratio:1;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 60px rgba(0,0,0,.42)}
+.portrait img{width:clamp(15rem,58vw,25rem);aspect-ratio:11/8;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 60px rgba(0,0,0,.42)}
 .portrait::after{content:"";position:absolute;inset:-10px;border-radius:30px;border:1px solid rgba(23,184,166,.35);pointer-events:none}
 
 /* ============ STATS ============ */
@@ -107,7 +107,7 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .about-grid p{color:var(--ink-2);margin:0 0 1.05em}
 .about-grid p:last-child{margin:0}
 .facts{background:var(--soft);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;align-self:start}
-.facts h4{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:1rem}
+.facts .facts-h{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:1rem}
 .facts dl{margin:0;display:grid;gap:.85rem}
 .facts .r{display:flex;justify-content:space-between;gap:1rem;padding-bottom:.85rem;border-bottom:1px solid var(--line);font-size:.9rem}
 .facts .r:last-child{border-bottom:0;padding-bottom:0}
@@ -139,6 +139,8 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 @media(min-width:760px){.pcards{grid-template-columns:repeat(3,1fr)}}
 .pcard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);text-decoration:none;color:inherit;transition:.18s}
 .pcard:hover{transform:translateY(-3px);box-shadow:var(--sh-lg);border-color:#C9D8EA}
+.pcard.is-upcoming{cursor:default}
+.pcard.is-upcoming:hover{transform:none;box-shadow:var(--sh);border-color:var(--line)}
 .pcard .thumb{aspect-ratio:4/3;object-fit:cover;background:var(--navy)}
 .pcard .pc-body{padding:1.25rem 1.35rem 1.45rem;display:flex;flex-direction:column;flex:1}
 .pill{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.24rem .55rem;border-radius:6px;margin-bottom:.7rem;align-self:flex-start}
@@ -159,8 +161,8 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .shot img{width:100%;height:auto}
 .figpair{display:grid;gap:1.25rem;margin-bottom:1.75rem}
 @media(min-width:720px){.figpair{grid-template-columns:1fr 1fr}}
-.figpair .shot{margin-bottom:0;display:flex;flex-direction:column}
-.figpair .shot img{flex:1;object-fit:contain;background:#12161C}
+.figpair .shot{margin-bottom:0}
+.figpair .shot img{width:100%;height:auto}
 .shot figcaption{font-size:.8rem;color:var(--ink-3);background:var(--soft);padding:.6rem .85rem;border-top:1px solid var(--line)}
 .split{display:grid;gap:1.75rem}
 @media(min-width:780px){.split{grid-template-columns:1fr 1fr;column-gap:2.75rem}}
@@ -210,7 +212,7 @@ ul.pts code{font-family:ui-monospace,Menlo,monospace;font-size:.85em;background:
 .tl-head{display:flex;flex-wrap:wrap;gap:.2rem 1rem;align-items:baseline;justify-content:space-between;margin-bottom:.2rem}
 .tl-head h3{font-size:1.05rem}
 .tl-head .when{font-size:.82rem;font-weight:600;color:var(--ink-3);white-space:nowrap}
-.tl-item .org{font-size:.9rem;font-weight:600;color:var(--blue);margin:0 0 .7rem}
+.tl-item .org{font-size:.9rem;font-weight:600;color:var(--blue-d);margin:0 0 .7rem}
 .tl-item.alt .org{color:var(--teal)}
 
 /* ============ CONTACT ============ */
@@ -263,7 +265,7 @@ footer strong{color:#C3D2E4}
         <span class="kicker">Manchester, United Kingdom</span>
         <h1>Liam Grey</h1>
         <p class="subtitle">Data Analyst — Excel · Python · SQL</p>
-        <p class="lede">I turn operational data into answers people can act on. I build the full pipeline — collection, cleaning, analysis and validation — and I test my conclusions before I present them.</p>
+        <p class="lede">I turn operational data into answers people can act on — collecting it, cleaning it, analysing it, then testing the conclusion before I present it.</p>
         <div class="hero-cta">
           <a class="btn btn-p" href="#projects">View my projects</a>
           <a class="btn btn-g" href="assets/Liam-Grey-CV.pdf">Download CV</a>
@@ -300,17 +302,17 @@ footer strong{color:#C3D2E4}
     <h2>I analyse operational data — and I've worked where it's generated.</h2>
     <div class="about-grid" style="margin-top:1.75rem">
       <div>
-        <p>I build the full pipeline: sourcing and cleaning the data, defining the metrics, running the analysis, then stress-testing the conclusion before I present it. That last step matters most to me — a finding nobody has challenged isn't a finding worth acting on.</p>
+        <p>I work the whole process through: sourcing and cleaning the data, defining the metrics, running the analysis, then stress-testing the conclusion before I present it. That last step matters most to me — a finding nobody has challenged isn't a finding worth acting on.</p>
         <p>What I bring that most entry-level analysts don't is context. I work in high-volume food production, so I've seen how operational numbers are actually produced: where they get recorded, where they get recorded wrong, and what a supervisor means when they say a line ran badly. That means I know which questions are worth asking before I open the spreadsheet.</p>
         <p>Behind that sits formal training and self-directed work — the Google Data Analytics Professional Certificate, Excel to a working standard, and Python for datasets too large for a spreadsheet. The featured project below is a validation suite I built to attack my own results, and it caught four flaws in my methodology before I reported anything.</p>
         <p>I'm looking for a data or business analyst apprenticeship where I can apply that to real commercial problems — ideally in operations, manufacturing or logistics.</p>
       </div>
       <aside class="facts">
-        <h4>At a glance</h4>
+        <h3 class="facts-h">At a glance</h3>
         <dl>
           <div class="r"><dt>Location</dt><dd>Manchester, UK</dd></div>
           <div class="r"><dt>Looking for</dt><dd>Analyst apprenticeship</dd></div>
-          <div class="r"><dt>Availability</dt><dd>Immediate</dd></div>
+          <div class="r"><dt>Availability</dt><dd>Currently employed</dd></div>
           <div class="r"><dt>Certificate</dt><dd>Google Data Analytics</dd></div>
           <div class="r"><dt>Core tools</dt><dd>Excel, Python</dd></div>
           <div class="r"><dt>Sector interest</dt><dd>Operations, manufacturing</dd></div>
@@ -380,7 +382,7 @@ footer strong{color:#C3D2E4}
           <div class="pc-tags"><span class="tg">Python (AI-assisted)</span><span class="tg">Monte Carlo</span><span class="tg">Validation</span></div>
         </div>
       </a>
-      <a class="pcard reveal" href="#feature" aria-disabled="true" style="pointer-events:none;opacity:.94">
+      <div class="pcard reveal is-upcoming">
         <img class="thumb" src="assets/cover-production.png" alt="" loading="lazy">
         <div class="pc-body">
           <span class="pill wip">In progress</span>
@@ -388,8 +390,8 @@ footer strong{color:#C3D2E4}
           <p>Shift-level downtime, yield and throughput — testing assumed causes against the data.</p>
           <div class="pc-tags"><span class="tg">Excel</span><span class="tg">PivotTables</span><span class="tg">Manufacturing</span></div>
         </div>
-      </a>
-      <a class="pcard reveal" href="#feature" aria-disabled="true" style="pointer-events:none;opacity:.94">
+      </div>
+      <div class="pcard reveal is-upcoming">
         <img class="thumb" src="assets/cover-sql.png" alt="" loading="lazy">
         <div class="pc-body">
           <span class="pill wip">In progress</span>
@@ -397,7 +399,7 @@ footer strong{color:#C3D2E4}
           <p>Joins, aggregation and window functions, written up as findings rather than queries.</p>
           <div class="pc-tags"><span class="tg">SQL</span><span class="tg">Reporting</span></div>
         </div>
-      </a>
+      </div>
     </div>
 
     <article class="feature" id="feature">
@@ -521,9 +523,9 @@ footer strong{color:#C3D2E4}
         <div class="tl-head"><h3>Analytics practice — self-directed</h3><span class="when">2024 – Present</span></div>
         <p class="org">Personal projects</p>
         <ul class="pts t">
-          <li>Sourced, cleaned and structured multi-year datasets across six data series.</li>
-          <li>Defined pass/fail criteria before testing rather than after, then analysed expected value, drawdown, win rate and risk of ruin.</li>
-          <li>Built Monte Carlo simulation, sensitivity analysis and correlation testing on top of the results.</li>
+          <li>Sourced, cleaned and structured multi-year datasets across six data series, then built repeatable summaries from them.</li>
+          <li>Defined what would count as success or failure before running the analysis, rather than deciding afterwards.</li>
+          <li>Built simulation, sensitivity and correlation testing on top of the results to check how far the conclusions could be trusted.</li>
         </ul>
       </div>
       <div class="tl-item">
