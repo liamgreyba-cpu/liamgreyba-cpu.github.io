@@ -20,16 +20,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230F2138'/><text x='32' y='44' font-size='34' font-family='Helvetica,Arial' font-weight='700' fill='%232E7DF6' text-anchor='middle'>LG</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23191B2E'/><text x='32' y='44' font-size='34' font-family='Helvetica,Arial' font-weight='700' fill='%235B4BD6' text-anchor='middle'>LG</text></svg>">
 <style>
 :root{
-  --navy:#0F2138; --navy-2:#17314F; --navy-3:#1E3E62;
-  --blue:#2E7DF6; --blue-d:#1B5FCC; --teal:#17B8A6; --accent-wip:#C98A16;
-  --bg:#FFFFFF; --soft:#F4F7FB; --line:#E1E8F0;
-  --ink:#10233B; --ink-2:#51657D; --ink-3:#5F6E86;
+  --navy:#191B2E; --navy-2:#23263F; --navy-3:#2E3253;
+  --blue:#5B4BD6; --blue-d:#4436B8; --teal:#3FAFB3; --accent-wip:#8A6BD8;
+  --bg:#FFFFFF; --soft:#F5F5FA; --line:#E4E4EF;
+  --ink:#191B2E; --ink-2:#545871; --ink-3:#5C6178;
   --f:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  --sh:0 1px 2px rgba(16,35,59,.05),0 8px 24px rgba(16,35,59,.07);
-  --sh-lg:0 2px 4px rgba(16,35,59,.06),0 18px 44px rgba(16,35,59,.12);
+  --sh:0 1px 2px rgba(25,27,46,.05),0 8px 24px rgba(25,27,46,.07);
+  --sh-lg:0 2px 4px rgba(25,27,46,.06),0 18px 44px rgba(25,27,46,.12);
   --r:14px;
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -50,15 +50,15 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .sec-intro{color:var(--ink-2);max-width:60ch;margin:.85rem 0 2.5rem;font-size:1.02rem}
 
 /* ============ NAV ============ */
-.nav{position:sticky;top:0;z-index:50;background:rgba(15,33,56,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.09)}
+.nav{position:sticky;top:0;z-index:50;background:rgba(25,27,46,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.09)}
 .nav .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.85rem}
 .logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:#fff;font-weight:800;font-size:.98rem;letter-spacing:-.02em}
 .logo .mark{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--teal));display:grid;place-items:center;font-size:.78rem;font-weight:800;color:#fff}
 .nav nav{display:flex;gap:1.6rem;align-items:center}
-.nav nav a{font-size:.875rem;font-weight:500;color:#B9C7D9;text-decoration:none;transition:color .15s}
+.nav nav a{font-size:.875rem;font-weight:500;color:#BFC2DA;text-decoration:none;transition:color .15s}
 .nav nav a:hover{color:#fff}
 .nav .cta{background:var(--blue-d);color:#fff;padding:.5rem .95rem;border-radius:8px;font-weight:600}
-.nav .cta:hover{background:#154BA3;color:#fff}
+.nav .cta:hover{background:#372BA0;color:#fff}
 @media(max-width:820px){.nav nav a:not(.cta){display:none}}
 
 /* ============ HERO ============ */
@@ -67,7 +67,7 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
   background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
   background-size:52px 52px;mask-image:radial-gradient(ellipse 90% 70% at 60% 30%,#000,transparent)}
 .hero::after{content:"";position:absolute;width:36rem;height:36rem;right:-10rem;top:-12rem;border-radius:50%;
-  background:radial-gradient(circle,rgba(46,125,246,.34),transparent 68%);pointer-events:none}
+  background:radial-gradient(circle,rgba(91,75,214,.34),transparent 68%);pointer-events:none}
 .hero .wrap{position:relative;z-index:2}
 .hero-grid{display:grid;gap:2.5rem;align-items:center}
 @media(min-width:900px){.hero-grid{grid-template-columns:minmax(0,1fr) 26rem;gap:3.5rem}}
@@ -75,23 +75,23 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .hero .kicker::before{background:var(--teal)}
 .hero h1{font-size:clamp(2.15rem,1.5rem+2.8vw,3.5rem);font-weight:800;margin-bottom:.75rem}
 .hero .subtitle{font-size:clamp(1.02rem,.98rem+.35vw,1.2rem);font-weight:600;color:var(--teal);margin:0 0 1.15rem}
-.hero p.lede{color:#C3D2E4;max-width:52ch;margin:0;font-size:1.02rem}
+.hero p.lede{color:#C6C9DE;max-width:52ch;margin:0;font-size:1.02rem}
 .hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2rem}
 .btn{display:inline-flex;align-items:center;gap:.5rem;font-size:.92rem;font-weight:600;text-decoration:none;padding:.78rem 1.35rem;border-radius:10px;transition:.16s;border:1px solid transparent;cursor:pointer}
 .btn-p{background:var(--blue-d);color:#fff}
-.btn-p:hover{background:#154BA3;transform:translateY(-1px);box-shadow:0 8px 20px rgba(46,125,246,.32)}
+.btn-p:hover{background:#372BA0;transform:translateY(-1px);box-shadow:0 8px 20px rgba(91,75,214,.32)}
 .btn-g{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.2)}
 .btn-g:hover{background:rgba(255,255,255,.14)}
 .btn-o{background:#fff;color:var(--ink);border-color:var(--line);box-shadow:var(--sh)}
 .btn-o:hover{border-color:var(--blue);color:var(--blue)}
-.hero-contact{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;margin-top:1.9rem;font-size:.875rem;color:#A9BBD1}
-.hero-contact a{color:#A9BBD1;text-decoration:none;display:inline-flex;align-items:center;gap:.45rem}
+.hero-contact{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;margin-top:1.9rem;font-size:.875rem;color:#AFB3CE}
+.hero-contact a{color:#AFB3CE;text-decoration:none;display:inline-flex;align-items:center;gap:.45rem}
 .hero-contact a:hover{color:#fff}
 .hero-contact svg{width:15px;height:15px;flex:none;opacity:.85}
 
 .portrait{position:relative;justify-self:center}
 .portrait img{width:clamp(15rem,58vw,25rem);aspect-ratio:11/8;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 60px rgba(0,0,0,.42)}
-.portrait::after{content:"";position:absolute;inset:-10px;border-radius:30px;border:1px solid rgba(23,184,166,.35);pointer-events:none}
+.portrait::after{content:"";position:absolute;inset:-10px;border-radius:30px;border:1px solid rgba(63,175,179,.35);pointer-events:none}
 
 /* ============ STATS ============ */
 .stats{background:var(--soft);border-block:1px solid var(--line)}
@@ -138,14 +138,14 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .pcards{display:grid;gap:1.5rem;margin-bottom:3.5rem}
 @media(min-width:760px){.pcards{grid-template-columns:repeat(3,1fr)}}
 .pcard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);text-decoration:none;color:inherit;transition:.18s}
-.pcard:hover{transform:translateY(-3px);box-shadow:var(--sh-lg);border-color:#C9D8EA}
+.pcard:hover{transform:translateY(-3px);box-shadow:var(--sh-lg);border-color:#CFCCEA}
 .pcard.is-upcoming{cursor:default}
 .pcard.is-upcoming:hover{transform:none;box-shadow:var(--sh);border-color:var(--line)}
 .pcard .thumb{aspect-ratio:4/3;object-fit:cover;background:var(--navy)}
 .pcard .pc-body{padding:1.25rem 1.35rem 1.45rem;display:flex;flex-direction:column;flex:1}
 .pill{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.24rem .55rem;border-radius:6px;margin-bottom:.7rem;align-self:flex-start}
-.pill.done{background:#E7F8F4;color:#0C7A6D}
-.pill.wip{background:#FFF4E0;color:#9A6100}
+.pill.done{background:#E7F8F4;color:#0D6B6E}
+.pill.wip{background:#FFF4E0;color:#5B3FA8}
 .pcard h3{font-size:1.03rem;margin-bottom:.45rem}
 .pcard p{font-size:.88rem;color:var(--ink-2);margin:0 0 1rem}
 .pc-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:auto}
@@ -160,7 +160,7 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .inprog-note{margin:1.6rem 0 0;padding-top:1.1rem;border-top:1px solid var(--line);font-size:.88rem;color:var(--ink-3)}
 .feature{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh-lg);overflow:hidden}
 .feature .fhead{background:var(--navy);color:#fff;padding:1.6rem clamp(1.35rem,3vw,2.25rem)}
-.feature .fhead .pill{background:rgba(23,184,166,.18);color:var(--teal)}
+.feature .fhead .pill{background:rgba(63,175,179,.20);color:var(--teal)}
 .feature .fhead h3{font-size:clamp(1.2rem,1.05rem+.6vw,1.55rem);margin-bottom:.55rem}
 .feature .fhead p{color:#BDCCDE;margin:0;max-width:66ch;font-size:.95rem}
 .feature .fbody{padding:clamp(1.35rem,3vw,2.25rem)}
@@ -230,18 +230,18 @@ ul.pts code{font-family:ui-monospace,Menlo,monospace;font-size:.85em;background:
   background-size:52px 52px;mask-image:radial-gradient(ellipse 80% 80% at 30% 50%,#000,transparent)}
 .contact .wrap{position:relative;z-index:2}
 .contact .kicker{color:var(--teal)}.contact .kicker::before{background:var(--teal)}
-.contact p.lede{color:#C3D2E4;max-width:54ch;margin:.85rem 0 0}
+.contact p.lede{color:#C6C9DE;max-width:54ch;margin:.85rem 0 0}
 .contact-grid{display:grid;gap:.9rem;margin-top:2.25rem}
 @media(min-width:700px){.contact-grid{grid-template-columns:repeat(3,1fr);max-width:52rem}}
 .cc{display:flex;align-items:center;gap:.9rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:1.05rem 1.15rem;text-decoration:none;color:#fff;transition:.16s}
 .cc:hover{background:rgba(255,255,255,.14);border-color:var(--teal);transform:translateY(-2px)}
 .cc svg{width:20px;height:20px;stroke:var(--teal);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.cc span{display:block;font-size:.72rem;color:#9BB0C8;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+.cc span{display:block;font-size:.72rem;color:#A3A8C6;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
 .cc b{display:block;font-size:.9rem;font-weight:600;word-break:break-word}
 
-footer{background:var(--navy);color:#8FA3BC;padding-block:2rem 2.5rem;font-size:.82rem;border-top:1px solid rgba(255,255,255,.09)}
+footer{background:var(--navy);color:#9096B4;padding-block:2rem 2.5rem;font-size:.82rem;border-top:1px solid rgba(255,255,255,.09)}
 footer p{margin:0 0 .55rem;max-width:78ch}
-footer strong{color:#C3D2E4}
+footer strong{color:#C6C9DE}
 
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s cubic-bezier(.22,.61,.36,1)}
 .reveal.in{opacity:1;transform:none}
