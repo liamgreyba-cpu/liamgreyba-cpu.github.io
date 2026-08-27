@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Liam Grey — Data Analyst | Manchester, UK</title>
-<meta name="description" content="Liam Grey — data analyst in Manchester. Excel, Python and SQL. Analytical projects in operational performance and model validation. Seeking a data or business analyst apprenticeship.">
+<meta name="description" content="Liam Grey — entry-level data analyst in Manchester. Excel, SQL and Power BI. Self-directed analysis projects with the checks behind them. Seeking a data or business analyst apprenticeship.">
 <meta property="og:title" content="Liam Grey — Data Analyst">
-<meta property="og:description" content="Turning operational data into decisions people can act on. Excel, Python and SQL. Manchester, UK.">
+<meta property="og:description" content="Excel, SQL and Power BI. Self-directed analysis projects, with the checks behind them. Manchester, UK.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://liamgreyba-cpu.github.io">
 <meta property="og:image" content="https://liamgreyba-cpu.github.io/assets/social-card.png">
@@ -15,7 +15,7 @@
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Liam Grey — Data Analyst">
-<meta name="twitter:description" content="Turning operational data into decisions people can act on. Excel, Python and SQL. Manchester, UK.">
+<meta name="twitter:description" content="Excel, SQL and Power BI. Self-directed analysis projects, with the checks behind them. Manchester, UK.">
 <meta name="twitter:image" content="https://liamgreyba-cpu.github.io/assets/social-card.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -136,7 +136,8 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 
 /* ============ PROJECTS ============ */
 .pcards{display:grid;gap:1.5rem;margin-bottom:3.5rem}
-@media(min-width:760px){.pcards{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:680px){.pcards{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.pcards{grid-template-columns:repeat(4,1fr)}}
 .pcard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);text-decoration:none;color:inherit;transition:.18s}
 .pcard:hover{transform:translateY(-3px);box-shadow:var(--sh-lg);border-color:#CFCCEA}
 .pcard.is-upcoming{cursor:default}
@@ -164,6 +165,12 @@ h3{font-size:1.2rem;letter-spacing:-.02em}
 .feature .fhead h3{font-size:clamp(1.2rem,1.05rem+.6vw,1.55rem);margin-bottom:.55rem}
 .feature .fhead p{color:#BDCCDE;margin:0;max-width:66ch;font-size:.95rem}
 .feature .fbody{padding:clamp(1.35rem,3vw,2.25rem)}
+.stage{font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);
+  margin:2.25rem 0 .85rem;padding-bottom:.5rem;border-bottom:2px solid var(--blue)}
+.fbody > .stage:first-child{margin-top:0}
+.stage-p{margin:0 0 1.1rem;color:var(--ink-2);font-size:.94rem;max-width:70ch}
+.stage-p code,.fbody ul.pts code{font-family:ui-monospace,Menlo,monospace;font-size:.85em;background:var(--soft);border:1px solid var(--line);padding:.06em .3em;border-radius:4px}
+.fbody ul.pts{margin-bottom:1.35rem}
 .shot{display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#12161C;margin-bottom:1.75rem;text-decoration:none;color:inherit;transition:border-color .16s}
 .shot:hover{border-color:var(--blue-d)}
 .shot img{width:100%;height:auto}
@@ -283,7 +290,7 @@ footer strong{color:#C6C9DE}
       <div>
         <span class="kicker">Manchester, United Kingdom</span>
         <h1>Liam Grey</h1>
-        <p class="subtitle">Data Analyst — Excel · Python · SQL</p>
+        <p class="subtitle">Data Analyst — Excel · SQL · Power BI</p>
         <p class="lede">I take a dataset, work out what it can actually tell you, and check the answer before handing it over. Currently learning, currently building, and looking for an apprenticeship or junior analyst role.</p>
         <div class="hero-cta">
           <a class="btn btn-p" href="#projects">View my projects</a>
@@ -308,7 +315,7 @@ footer strong{color:#C6C9DE}
     <div class="stat-grid">
       <div class="stat"><b>12,400+</b><span>Records analysed</span></div>
       <div class="stat"><b>5,000</b><span>Simulations run</span></div>
-      <div class="stat"><b>11 yrs</b><span>Of data modelled</span></div>
+      <div class="stat"><b>2</b><span>Projects completed</span></div>
       <div class="stat"><b>9</b><span>Certificate courses</span></div>
     </div>
   </div>
@@ -323,7 +330,7 @@ footer strong{color:#C6C9DE}
       <div>
         <p>I'm Liam. I'm learning data analysis and looking for an apprenticeship or junior analyst role in Manchester.</p>
         <p>I finished the Google Data Analytics certificate in May 2026, working through it around full-time shifts in a food production job. Since then I've been building projects to practise properly rather than just following tutorials.</p>
-        <p>The finished one below took an 11-year dataset, analysed it, then spent longer checking the analysis for mistakes than producing it. It found four. They're all written up.</p>
+        <p>Both finished projects below include the checks I ran on my own work. One reconciles a monthly summary back to the raw data to prove nothing was lost; the other found four mistakes in my own testing method, which are written up rather than quietly fixed.</p>
         <p>I'm early on. I'm solid with Excel, I'm learning SQL and Power BI, and I'd rather show you what I've actually built than list things I've read about.</p>
       </div>
       <aside class="facts">
@@ -333,7 +340,7 @@ footer strong{color:#C6C9DE}
           <div class="r"><dt>Focus</dt><dd>Excel, SQL, reporting</dd></div>
           <div class="r"><dt>Availability</dt><dd>Currently employed</dd></div>
           <div class="r"><dt>Certificate</dt><dd>Google Data Analytics</dd></div>
-          <div class="r"><dt>Core tools</dt><dd>Excel, Python</dd></div>
+          <div class="r"><dt>Core tools</dt><dd>Excel</dd></div>
           <div class="r"><dt>Open to</dt><dd>Apprenticeship or junior role</dd></div>
         </dl>
       </aside>
@@ -392,6 +399,15 @@ footer strong{color:#C6C9DE}
     <p class="sec-intro">Self-directed analytical work. Each project covers the full process — from raw data through to a conclusion I've tested against its own weaknesses.</p>
 
     <div class="pcards">
+      <a class="pcard reveal" href="#running">
+        <img class="thumb" src="assets/cover-running.png" alt="" loading="lazy">
+        <div class="pc-body">
+          <span class="pill done">Complete</span>
+          <h3>Running data analysis in Excel</h3>
+          <p>13 months of my own runs from a Garmin watch — cleaned, totalled by month, and checked that the totals added up.</p>
+          <div class="pc-tags"><span class="tg">Excel</span><span class="tg">SUMIF</span><span class="tg">Data cleaning</span></div>
+        </div>
+      </a>
       <a class="pcard reveal" href="#coffee">
         <img class="thumb" src="assets/cover-coffee.png" alt="" loading="lazy">
         <div class="pc-body">
@@ -447,6 +463,93 @@ footer strong{color:#C6C9DE}
           </div>
         </div>
         <p class="inprog-note">Published here when it's finished, in the same format as the project below: what I did, what I found, and what would make the answer wrong.</p>
+      </div>
+    </article>
+
+    <article class="feature" id="running">
+      <div class="fhead">
+        <span class="pill">Complete</span>
+        <h3>Analysing 13 months of my own running data in Excel</h3>
+        <p>Thirteen months of my own runs, exported from my Garmin watch. The raw file had 40 runs across 36 columns and wasn't usable as it came, so I cut it down to the five fields I needed, totalled the distance by month, and checked the totals actually added up.</p>
+      </div>
+      <div class="fbody">
+        <a class="shot" href="assets/run-chart.png" target="_blank" rel="noopener">
+          <img src="assets/run-chart.png" alt="Column chart of monthly running distance from July 2025 to August 2026, peaking at 73 km in August 2025 and falling sharply after January 2026" loading="lazy">
+          <figcaption>Monthly running volume, July 2025 – August 2026. Peak 73 km; sharp decline from February 2026.</figcaption>
+        </a>
+
+        <table class="metrics">
+          <caption>Headline figures</caption>
+          <thead><tr><th scope="col">Measure</th><th scope="col">Value</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Runs analysed</th><td>40, July 2025 – August 2026</td></tr>
+            <tr><th scope="row">Total distance</th><td>376.44 km over 32.2 hours</td></tr>
+            <tr><th scope="row">Average run</th><td>9.41 km at 5.13 min/km</td></tr>
+            <tr><th scope="row">Longest run</th><td>33.15 km</td></tr>
+            <tr><th scope="row">Peak month</th><td>August 2025 — 73.15 km</td></tr>
+            <tr><th scope="row">Lowest month</th><td>June 2026 — 5.02 km</td></tr>
+            <tr><th scope="row">Months with no runs</th><td>2 — March and July 2026</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="stage">The data</h4>
+        <p class="stage-p">A CSV straight off the watch: 40 runs, 36 columns, most of them things I didn't need. The dates came through as numbers like 46249.58 rather than dates, and the times were stored as fractions of a day. I left the raw sheet untouched and did all the cleaning on a separate tab, so every figure can be traced back to the original.</p>
+        <a class="shot" href="assets/run-raw.png" target="_blank" rel="noopener">
+          <img src="assets/run-raw.png" alt="Raw Garmin CSV export in Excel showing 40 rows across 36 columns of activity metrics" loading="lazy">
+          <figcaption>Raw Garmin export — 40 runs, 36 columns, dates stored as serial numbers.</figcaption>
+        </a>
+
+        <h4 class="stage">Cleaning</h4>
+        <p class="stage-p">I cut 36 columns down to 5: date, distance, duration, pace and month.</p>
+        <ul class="pts">
+          <li>Turned the date numbers into actual dates.</li>
+          <li>Converted the times from fractions of a day into minutes by multiplying by 1440, the number of minutes in a day.</li>
+          <li>Worked out pace by dividing duration by distance. The export didn't have a pace column in a usable form, so this one I created.</li>
+          <li>Pulled a month label out of each date so I could group the runs by month.</li>
+        </ul>
+        <p class="stage-p">One thing caught me out. My formulas picked up the formatting from the raw sheet, so a duration of 52.97 minutes displayed as a clock time instead of a number. The value was right — only the display was wrong. I had to set the format manually.</p>
+        <div class="figpair">
+          <a class="shot" href="assets/run-pace.png" target="_blank" rel="noopener">
+            <img src="assets/run-pace.png" alt="Excel formula bar showing pace calculated as duration divided by distance" loading="lazy">
+            <figcaption>Pace engineered from cleaned duration and distance.</figcaption>
+          </a>
+          <a class="shot" href="assets/run-clean.png" target="_blank" rel="noopener">
+            <img src="assets/run-clean.png" alt="Cleaned Excel table with five columns: date, distance, duration, pace and month" loading="lazy">
+            <figcaption>Cleaned dataset — 5 fields derived from 36 raw columns.</figcaption>
+          </a>
+        </div>
+
+        <h4 class="stage">Checking it added up</h4>
+        <p class="stage-p">I used <code>SUMIF</code> to total the distance for each month, and <code>SORT(UNIQUE())</code> to build the list of months automatically rather than typing them out.</p>
+        <p class="stage-p">Then I checked it. I added up the 12 monthly totals and compared that to the total of all 40 runs in the raw data. Both came to 376.44 km, which tells me nothing was missed or counted twice when I grouped them.</p>
+        <a class="shot" href="assets/run-validation.png" target="_blank" rel="noopener" style="max-width:26rem">
+          <img src="assets/run-validation.png" alt="Monthly totals table with two check rows, both showing 376.44 km" loading="lazy">
+          <figcaption>Validation — monthly totals reconcile exactly to the raw distance sum.</figcaption>
+        </a>
+
+        <div class="split">
+          <div>
+            <h4>What it showed</h4>
+            <ul class="pts">
+              <li>I ran roughly 35–45 km a month from September 2025 to January 2026, then it dropped off sharply. February was 5.34 km and it never got back to where it was.</li>
+              <li>The distance came from a mix of regular 5 km runs and occasional long ones, up to 33 km.</li>
+              <li>Pace stayed fairly consistent, between 4.0 and 6.4 min/km on almost every run.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="t">Limitations</h4>
+            <ul class="pts t">
+              <li><b>One odd entry left in.</b> A 1.28 km activity at 12.45 min/km, well outside everything else — probably a walk or a run I abandoned. I left it in and flagged it rather than quietly deleting it.</li>
+              <li><b>Two months are missing from the chart.</b> I didn't run at all in March or July 2026, so those months aren't on the chart. It jumps from February to April, which makes the gap look smaller than it was.</li>
+              <li><b>One column I couldn't use.</b> Body Battery Drain had text mixed in with the numbers and would have needed more work to clean.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="chips">
+          <span class="tg">Excel</span><span class="tg">SUMIF</span><span class="tg">SORT</span><span class="tg">UNIQUE</span>
+          <span class="tg">TEXT</span><span class="tg">Data cleaning</span><span class="tg">Validation</span><span class="tg">Charting</span>
+        </div>
       </div>
     </article>
 
